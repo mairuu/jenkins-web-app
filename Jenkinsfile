@@ -1,9 +1,6 @@
 pipeline {
     agent {
-        docker {
-            image 'docker:latest'
-            args '-v /var/run/docker.sock:/var/run/docker.sock -v /usr/bin/kubectl:/usr/bin/kubectl -v $HOME/.kube:/root/.kube'
-        }
+        label 'k8s-agent-1'
     }
 
     triggers {
