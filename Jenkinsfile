@@ -52,7 +52,7 @@ pipeline {
 
     post {
         success {
-            echo "Deployment successful! Access at http://my-nginx.local"
+            echo "Deployment successful! Access at http://nginx.local"
         }
         failure {
             echo "Deployment failed! Check logs for details."
